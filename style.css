@@ -8,6 +8,7 @@
   --soft: #765c47;
   --line: rgba(75, 46, 30, 0.12);
   --shadow: 0 24px 70px rgba(75, 46, 30, 0.12);
+  color-scheme: light;
 }
 
 * {
@@ -16,13 +17,17 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
+  overflow-x: hidden;
   color: var(--ink);
   background: var(--cream);
   font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -39,7 +44,7 @@ a {
   justify-content: space-between;
   gap: 16px;
   min-height: 72px;
-  padding: 10px 22px;
+  padding: 10px max(18px, env(safe-area-inset-right)) 10px max(18px, env(safe-area-inset-left));
   background: rgba(255, 255, 255, 0.94);
   box-shadow: 0 12px 34px rgba(75, 46, 30, 0.06);
   backdrop-filter: blur(18px);
@@ -58,6 +63,7 @@ a {
 .brand img {
   width: 48px;
   height: 48px;
+  object-fit: cover;
   border-radius: 50%;
 }
 
@@ -66,6 +72,8 @@ a {
   align-items: center;
   justify-content: center;
   min-height: 52px;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
   padding: 15px 22px;
   color: var(--white);
   background: var(--chocolate);
@@ -91,7 +99,7 @@ a {
 .hero,
 .section,
 .final-cta {
-  padding: 78px 22px;
+  padding: 78px max(22px, env(safe-area-inset-right)) 78px max(22px, env(safe-area-inset-left));
 }
 
 .hero {
@@ -99,6 +107,7 @@ a {
   gap: 48px;
   align-items: center;
   min-height: calc(100vh - 72px);
+  min-height: calc(100svh - 72px);
   background: radial-gradient(circle at 82% 18%, rgba(216, 186, 149, 0.24), transparent 36%), linear-gradient(180deg, var(--white), var(--cream));
 }
 
@@ -128,14 +137,16 @@ h2 {
 h1 {
   max-width: 760px;
   margin-bottom: 18px;
-  font-size: clamp(3.45rem, 15vw, 7.8rem);
-  line-height: 0.82;
+  font-size: clamp(3.05rem, 14vw, 7.8rem);
+  line-height: 0.86;
+  overflow-wrap: anywhere;
 }
 
 h2 {
   margin-bottom: 28px;
   font-size: clamp(2.35rem, 8vw, 4.3rem);
   line-height: 0.96;
+  overflow-wrap: anywhere;
 }
 
 h3 {
@@ -168,6 +179,7 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 28px;
   box-shadow: var(--shadow);
+  isolation: isolate;
 }
 
 .van-photo {
@@ -203,6 +215,7 @@ h3 {
   box-shadow: 0 14px 36px rgba(75, 46, 30, 0.11);
   font-size: 0.92rem;
   font-weight: 800;
+  white-space: nowrap;
 }
 
 .badge-one {
@@ -303,12 +316,23 @@ h3 {
   font-weight: 700;
 }
 
-.map-placeholder {
-  display: block;
-  width: 100%;
+.map-embed {
+  position: relative;
+  min-height: 360px;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--white);
   border: 1px solid var(--line);
   border-radius: 28px;
   box-shadow: var(--shadow);
+}
+
+.map-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .final-cta {
@@ -331,7 +355,7 @@ h3 {
 .site-footer {
   display: grid;
   gap: 12px;
-  padding: 34px 22px 98px;
+  padding: 34px max(22px, env(safe-area-inset-right)) calc(98px + env(safe-area-inset-bottom)) max(22px, env(safe-area-inset-left));
   color: rgba(247, 242, 235, 0.9);
   background: var(--chocolate);
 }
@@ -342,8 +366,8 @@ h3 {
 
 .whatsapp-float {
   position: fixed;
-  right: 18px;
-  bottom: 18px;
+  right: max(18px, env(safe-area-inset-right));
+  bottom: max(18px, env(safe-area-inset-bottom));
   z-index: 30;
   display: inline-flex;
   align-items: center;
@@ -358,6 +382,8 @@ h3 {
   font-size: 0.82rem;
   font-weight: 900;
   animation: floatPulse 2.8s ease-in-out infinite;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .reveal {
@@ -393,16 +419,79 @@ h3 {
 }
 
 @media (max-width: 420px) {
+  .site-header {
+    gap: 10px;
+    min-height: 66px;
+  }
+
+  .brand img {
+    width: 44px;
+    height: 44px;
+  }
+
   .brand span {
     display: none;
   }
 
   .header-button {
     padding-inline: 14px;
+    font-size: 0.78rem;
+  }
+
+  .hero,
+  .section,
+  .final-cta {
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+
+  .hero {
+    gap: 34px;
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: clamp(2.8rem, 16vw, 4.2rem);
+  }
+
+  h2 {
+    font-size: clamp(2.1rem, 11vw, 3rem);
+  }
+
+  .van-photo {
+    aspect-ratio: 3 / 3.35;
+  }
+
+  .van-logo {
+    top: 13%;
+    right: 6%;
+    width: 82px;
+    height: 82px;
+  }
+
+  .badge {
+    min-height: 38px;
+    padding: 9px 12px;
+    font-size: 0.78rem;
+  }
+
+  .badge-two {
+    top: 68px;
+  }
+
+  .steps article,
+  .services article {
+    min-height: 112px;
+    padding: 20px;
+  }
+
+  .map-embed {
+    min-height: 300px;
   }
 
   .whatsapp-float {
     min-width: 58px;
+    min-height: 58px;
     padding: 0;
     font-size: 0;
   }
@@ -410,6 +499,12 @@ h3 {
   .whatsapp-float::before {
     content: "WA";
     font-size: 0.84rem;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 719px) {
+  .van-photo {
+    aspect-ratio: 4 / 3.35;
   }
 }
 
