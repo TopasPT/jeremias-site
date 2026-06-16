@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520">
+  <rect width="720" height="520" rx="34" fill="#FFFFFF"/>
+  <circle cx="360" cy="244" r="144" fill="#F7F2EB"/>
+  <circle cx="286" cy="220" r="46" fill="#D8BA95"/>
+  <circle cx="434" cy="220" r="46" fill="#D8BA95"/>
+  <ellipse cx="360" cy="254" rx="106" ry="118" fill="#E4C39C"/>
+  <circle cx="326" cy="240" r="11" fill="#352114"/>
+  <circle cx="394" cy="240" r="11" fill="#352114"/>
+  <path d="M340 314c16 12 24 12 40 0" fill="none" stroke="#4B2E1E" stroke-width="10" stroke-linecap="round"/>
+  <rect x="34" y="390" width="154" height="58" rx="29" fill="#FFFFFF" stroke="#D8BA95" stroke-width="3"/>
+  <text x="111" y="427" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#4B2E1E">Depois</text>
+</svg>

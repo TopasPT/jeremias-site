@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Jeremias</title>
+  <desc id="desc">Marca circular da Jeremias Banhos e Tosquias</desc>
+  <rect width="256" height="256" fill="#F7F2EB"/>
+  <circle cx="128" cy="112" r="86" fill="#D8BA95" stroke="#4B2E1E" stroke-width="8"/>
+  <circle cx="92" cy="110" r="24" fill="#8C6A4A"/>
+  <circle cx="164" cy="110" r="24" fill="#8C6A4A"/>
+  <ellipse cx="128" cy="124" rx="62" ry="55" fill="#E7C89F"/>
+  <circle cx="106" cy="112" r="7" fill="#352114"/>
+  <circle cx="150" cy="112" r="7" fill="#352114"/>
+  <path d="M122 130c0-7 12-7 12 0 0 8-12 8-12 0Z" fill="#352114"/>
+  <path d="M98 78c20-34 76-31 96 4-34-15-70-14-96-4Z" fill="#4B2E1E"/>
+  <path d="M88 86c20-32 74-44 112-10" fill="none" stroke="#8C6A4A" stroke-width="12" stroke-linecap="round"/>
+  <path d="M100 146c20 18 38 18 58 0" fill="none" stroke="#4B2E1E" stroke-width="7" stroke-linecap="round"/>
+  <path d="M102 180h52l-26 26Z" fill="#4B2E1E"/>
+  <rect x="22" y="190" width="212" height="46" rx="18" fill="#F7F2EB" stroke="#4B2E1E" stroke-width="6"/>
+  <text x="128" y="221" text-anchor="middle" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#4B2E1E">Jeremias</text>
+</svg>

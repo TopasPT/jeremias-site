@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520">
+  <rect width="720" height="520" rx="34" fill="#F7F2EB"/>
+  <path d="M190 112h340v300H190z" fill="#D8BA95" opacity=".18"/>
+  <circle cx="270" cy="206" r="58" fill="#8C6A4A" opacity=".42"/>
+  <circle cx="450" cy="206" r="58" fill="#8C6A4A" opacity=".42"/>
+  <ellipse cx="360" cy="252" rx="112" ry="126" fill="#8C6A4A" opacity=".62"/>
+  <circle cx="322" cy="238" r="12" fill="#352114"/>
+  <circle cx="398" cy="238" r="12" fill="#352114"/>
+  <path d="M330 318c22 18 38 18 60 0" fill="none" stroke="#4B2E1E" stroke-width="10" stroke-linecap="round"/>
+  <rect x="34" y="390" width="142" height="58" rx="29" fill="#4B2E1E"/>
+  <text x="105" y="427" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">Antes</text>
+</svg>

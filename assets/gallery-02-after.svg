@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520">
+  <rect width="720" height="520" rx="34" fill="#FFFFFF"/>
+  <circle cx="360" cy="228" r="132" fill="#D8BA95" opacity=".36"/>
+  <path d="M268 212c0-66 184-66 184 0 0 88-40 142-92 142s-92-54-92-142Z" fill="#D8BA95"/>
+  <circle cx="310" cy="210" r="14" fill="#352114"/>
+  <circle cx="410" cy="210" r="14" fill="#352114"/>
+  <path d="M334 296c20 16 32 16 52 0" fill="none" stroke="#4B2E1E" stroke-width="11" stroke-linecap="round"/>
+  <path d="M245 158c54-55 174-55 230 0" fill="none" stroke="#8C6A4A" stroke-width="18" stroke-linecap="round" opacity=".56"/>
+  <rect x="34" y="390" width="154" height="58" rx="29" fill="#FFFFFF" stroke="#D8BA95" stroke-width="3"/>
+  <text x="111" y="427" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#4B2E1E">Depois</text>
+</svg>

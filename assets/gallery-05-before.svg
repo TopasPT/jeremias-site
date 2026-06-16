@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520">
+  <rect width="720" height="520" rx="34" fill="#F7F2EB"/>
+  <path d="M250 170c36-72 184-72 220 0 40 78-10 198-110 198S210 248 250 170Z" fill="#8C6A4A" opacity=".72"/>
+  <path d="M236 178c-45-38-56-92-28-118 54 28 84 62 86 116Z" fill="#4B2E1E" opacity=".62"/>
+  <path d="M484 178c45-38 56-92 28-118-54 28-84 62-86 116Z" fill="#4B2E1E" opacity=".62"/>
+  <circle cx="322" cy="244" r="13" fill="#352114"/>
+  <circle cx="398" cy="244" r="13" fill="#352114"/>
+  <path d="M338 318c17 14 27 14 44 0" fill="none" stroke="#4B2E1E" stroke-width="10" stroke-linecap="round"/>
+  <rect x="34" y="390" width="142" height="58" rx="29" fill="#4B2E1E"/>
+  <text x="105" y="427" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">Antes</text>
+</svg>
